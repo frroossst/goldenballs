@@ -400,7 +400,7 @@ r2_vote.append(p2_vote)
 print("enter total number of votes for",r2p3)
 p3_vote=int(input())
 r2_vote.append(p3_vote)
-print(r2_vote)
+#print(r2_vote)
 r2v=0
 round3_lot=[]
 r2v_max=max(r2_vote)

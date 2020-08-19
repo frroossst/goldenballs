@@ -1,1 +1,1 @@
-10 | 100
+KILLER | 2000 | KILLER
