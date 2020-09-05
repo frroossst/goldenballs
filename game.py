@@ -5,7 +5,7 @@ r1_players=[]
 r1_vote=[]
 r2_vote=[]
 ballpit=[10,50,75,100,200,300,500,750,1000,1200,1500,1800,2000,5000,10000,15000,20000,30000,25000,35000,40000,45000,50000,55000,60000,65000,70000,75000]
-print(len(ballpit))
+#print(len(ballpit))
 p1=pl2=pl3=pl4=""
 p1=input("player one : ")
 r1_players.append(p1)
@@ -400,7 +400,7 @@ r2_vote.append(p2_vote)
 print("enter total number of votes for",r2p3)
 p3_vote=int(input())
 r2_vote.append(p3_vote)
-#print(r2_vote)
+print(r2_vote)
 r2v=0
 round3_lot=[]
 r2v_max=max(r2_vote)
@@ -483,7 +483,7 @@ print("you now have 60 seconds to deliberate with each other")
 print("enter 1 to steal and 0 to split")
 print("now",r3p1,"will vote")
 v1=int(input("please enter your vote : "))
-print("now",r3p2,"will")
+print("now",r3p2,"will vote")
 v2=int(input("please enter your vote : "))
 if v1==0 and v2==0:
     print("both of you have won",prize_pot//2)
@@ -493,12 +493,12 @@ elif v1==1 and v2==1:
     print("There is no fire like passion, there is no shark like hatred, there is no snare like folly, there is no torrent like greed.\n ― Siddharta Gautama ")
 elif v1 != v2:
     if v1<v2:
-        print("***",r3p1,"***")
-        print("you are the proud owner of",prize_pool)
+        print("***",r3p2,"***")
+        print("you are the proud owner of",prize_pot)
         print("If you steal something small you are a petty thief, but if you steal millions you are a gentleman of society.")
     elif v2>v1:
-        print("***",r3p2,"***")
-        print("has just stolen",prize_pool)
+        print("***",r3p1,"***")
+        print("has just stolen",prize_pot)
         print("You shall not steal, nor deal falsely, nor lie to one another. -moses")
 
 
