@@ -1,17 +1,5 @@
 import time
 import random
-import mysql.connector
-db=mysql.connector.connect(
-    host='localhost',
-    user='home',
-    passwd='home',
-    database='data_dump'
-    )
-print(db)
-mycursor=db.cursor()
-mycursor.execute("USE data_dump")
-mycursor.execute("update player_elim set count=count+1 where player='player one'")
-db.commit()
 ra=rb=rc=rd=0
 r1_players=[]
 r1_vote=[]
@@ -224,7 +212,6 @@ for i in r1_vote:
     if i == max_votes_r1:
         player_elim=r1_vote.index(i)
         if player_elim == 0:
-            #sql injection
             print(p1,"has been eliminated")
             r1_players.pop(0)
             ra+=1
