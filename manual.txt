@@ -1,0 +1,31 @@
+This is how you play the game!
+
+SUMMARY
+Four players are dealt out golden balls worth varying amounts of money and some "Killer" balls. Two of each player's balls are on show, the rest are known only to each player. The aim is to eliminate the players with the Killers whilst keeping the big money in play, players are eliminated using a classic majority votes. Obviously players who are dealt weak balls have to fast-talk their way into the next round. The final two players aim to build as big a jackpot as possible, and win big. 
+
+Round 1
+At the back of the studio is the "Golden Bank," a giant contraption like a lottery machine. Inside are 100 golden balls, containing cash values that range from Rs.10 to Rs.75,000. Twelve of these balls are randomly drawn from the Golden Bank and put into a mixer, and four "Killer" balls are added. These 16 balls are split equally and randomly among four contestants, each of whom places two balls on their own front and back row holders without looking inside. The contestants, open their front-row balls for all to see.
+
+Following the introductions, the contestants each secretly look at their own back-row balls and announce the contents; they may either tell the truth or lie as they see fit. 
+
+They then discuss who they think is lying and try to establish who has the worst set of balls, in terms of the lowest total value and/or the most Killer balls. Each contestant secretly casts one vote as to whom they want to remove from the game. The contestant who receives the most votes is eliminated with no winnings. In the event of a two-way tie, the contestants not involved in it must discuss further and try to reach a consensus. If they do, the chosen contestant is eliminated; if not, each tied contestant is given one more ball at random, dispensed from the mixer. One is a Killer, the other is empty, and the person who receives the Killer is out of the game. If every contestant receives one vote, all four continue their discussion; the first three to reach an agreement on who should be eliminated advance to the next round.
+
+All four contestants reveal their back-row balls, and the eliminated contestant must then "bin" their balls, dropping them down a chute and removing them permanently from play.
+
+Round 2
+The remaining balls from the three surviving contestants are closed and put into the mixer. Two more cash balls are drawn from the Golden Bank, and one more Killer is added to give a total of 15 balls in play. Each contestant receives five balls, placing two on their front row and three on their back, and play proceeds as in Round 1. 
+
+Round 3
+The two remaining contestants' balls are again closed and put back into the mixer, and one more Killer ball is added to give a total of 11 balls in play. The balls are mixed and placed on a table, with the contestants seated at opposite ends. Starting with the contestant who brought more money into this round, each first chooses one ball to "bin" (eliminate) and then one to "win" (place in the jackpot). Each ball is opened as it is chosen. If a cash ball is chosen to win, its value is added to the potential jackpot; if a Killer is chosen, the jackpot is immediately divided by 10. Any "win" Killers that are found before the first "win" cash ball do not affect the jackpot. The contestants take turns choosing until they have five "win" balls, after which the one remaining ball is opened and binned.
+
+Depending on the distribution of the balls in the first two rounds, the number of Killers in play at the start of this round can range from one to six. 
+
+The Final Jackpot
+Each contestant is given a set of two balls, one each marked "Split" and "Steal," and must secretly choose one to indicate their intentions after looking inside to confirm which is which. The contestants may speak to each other and ask Carrott for advice before making their decision.
+
+    If both choose Split, they each receive half the jackpot.
+    If one chooses Steal and the other chooses Split, the Steal contestant wins the entire jackpot and the Split contestant leaves with nothing.
+    If both choose Steal, neither contestant wins any money.
+
+Voting
+The voting occurs outside the computer in the real world, scary right?

@@ -9,15 +9,23 @@ db=mysql.connector.connect(
     )
 print(db)
 mycursor=db.cursor()
-mycursor.execute("USE data_dump")
-mycursor.execute("update player_elim set count=count+1 where player='player one'")
-db.commit()
+mycursor.execute("update run set count=count+1")
+db.commit() 
 ra=rb=rc=rd=0
 r1_players=[]
 r1_vote=[]
 r2_vote=[]
-ballpit=[10,50,75,100,200,300,500,750,1000,1200,1500,1800,2000,5000,10000,15000,20000,30000,25000,35000,40000,45000,50000,55000,60000,65000,70000,75000]
+ballpit=[10,50,75,100,125,250,300,500,750,1000,1200,1500,1800,2000,2500,3000,3500,4000,5000,7500,10000,15000,20000,25000,30000,35000,40000,45000,50000,55000,60000,65000,70000,75000]
 #print(len(ballpit))
+man=input("do you want to review the rulebook? y/n : ")
+if man == 'y' or man=='Y':
+    fo=open("manual.txt","r")
+    rules=fo.readlines()
+    for z in rules:
+        print(z)
+    continue1=input("exit game? y/n : ")
+    if continue1=='n':
+        quit()
 p1=pl2=pl3=pl4=""
 p1=input("player one : ")
 r1_players.append(p1)
@@ -225,19 +233,27 @@ for i in r1_vote:
         player_elim=r1_vote.index(i)
         if player_elim == 0:
             #sql injection
+            mycursor.execute("update player_elim set count=count+1 where player='player one'")
+            db.commit()
             print(p1,"has been eliminated")
             r1_players.pop(0)
             ra+=1
         elif player_elim == 1:
+            mycursor.execute("update player_elim set count=count+1 where player='player two'")
+            db.commit()
             print(p2,"has been eliminated")
             r1_players.pop(1)
             rb+=1        
         elif player_elim == 2:
+            mycursor.execute("update player_elim set count=count+1 where player='player three'")
+            db.commit()
             print(p3,"has been eliminated")
             r1_players.pop(2)
             rc+=1        
         else:
             print(p4,"has been eliminated")
+            mycursor.execute("update player_elim set count=count+1 where player='player four'")
+            db.commit()            
             r1_players.pop(3)
             rd+=1
 #print(r1_players)
@@ -424,6 +440,7 @@ print()
 print()
 #print(round2_lot)
 print(round2_lot.pop(r2v_ind),"has been eliminated")
+print()
 #print(round2_lot)
 #print("ballpit r2")
 print(r2_ballpit2)
@@ -500,21 +517,27 @@ print("now",r3p2,"will vote")
 v2=int(input("please enter your vote : "))
 if v1==0 and v2==0:
     print("both of you have won",prize_pot//2)
+    mycursor.execute("update split_steal set count=count+1 where action='split'")
+    db.commit()     
     print("sharing is caring afterall")
 elif v1==1 and v2==1:
     print("looks like you're taking home 0 dollars")
+    mycursor.execute("update split_steal set count=count+1 where action='steal'")
+    db.commit() 
     print("There is no fire like passion, there is no shark like hatred, there is no snare like folly, there is no torrent like greed.\n ― Siddharta Gautama ")
 elif v1 != v2:
     if v1<v2:
         print("***",r3p2,"***")
-        print("you are the proud owner of",prize_pot)
+        print("you are the (not so) proud owner of",prize_pot)
+        mycursor.execute("update split_steal set count=count+1 where action='steal'")
+        db.commit() 
         print("If you steal something small you are a petty thief, but if you steal millions you are a gentleman of society.")
-    elif v2>v1:
+    elif v1>v2:
         print("***",r3p1,"***")
         print("has just stolen",prize_pot)
+        mycursor.execute("update split_steal set count=count+1 where action='steal'")
+        db.commit() 
         print("You shall not steal, nor deal falsely, nor lie to one another. -moses")
-
-
 
 
 
