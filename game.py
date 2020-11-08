@@ -23,7 +23,7 @@ if man == 'y' or man=='Y':
     rules=fo.readlines()
     for z in rules:
         print(z)
-    continue1=input("exit game? y/n : ")
+    continue1=input("continue game? y/n : ")
     if continue1=='n':
         quit()
 p1=pl2=pl3=pl4=""
@@ -226,7 +226,7 @@ r1_vote.append(p3_vote)
 print("enter total number of votes for",p4)
 p4_vote=int(input())
 r1_vote.append(p4_vote)
-print(r1_vote)
+#print(r1_vote)
 max_votes_r1=max(r1_vote)
 for i in r1_vote:
     if i == max_votes_r1:
@@ -259,7 +259,7 @@ for i in r1_vote:
 #print(r1_players)
 #round two begins
 round2_lot=r1_players
-print(round2_lot)
+#print(round2_lot)
 print("round two is beginning")
 print("our players for round 2 are :")
 for i in r1_players:
@@ -276,12 +276,12 @@ r2_ballpit.append(p1_lot)
 r2_ballpit.append(p2_lot)
 r2_ballpit.append(p3_lot)
 r2_ballpit.append(p4_lot)
-print(r2_ballpit)
+#print(r2_ballpit)
 for m in r2_ballpit:   
     for n in m:  
         r2_ballpit2.append(n)
-print(r2_ballpit2)
-print(len(r2_ballpit2))
+#print(r2_ballpit2)
+#print(len(r2_ballpit2))
 if ra == 1 :
     r2_ballpit2.pop(0)
     r2_ballpit2.pop(0)
@@ -303,14 +303,14 @@ elif rd == 1:
     r2_ballpit2.pop(12)
     r2_ballpit2.pop(12)
 print()
-print(r2_ballpit2)
-print(len(r2_ballpit2))
+#print(r2_ballpit2)
+#print(len(r2_ballpit2))
 r2_ballpit2.append(ballpit[0])
 r2_ballpit2.append(ballpit[20])
 r2_ballpit2.append('KILLER')
 print()
-print(r2_ballpit2)
-print(len(r2_ballpit2))
+#print(r2_ballpit2)
+#print(len(r2_ballpit2))
 r2_ballpit3=random.sample(r2_ballpit2,15)
 r2p1_li=[]
 r2p2_li=[]
@@ -319,12 +319,12 @@ n=0
 while n<5:
     r2p1_li.append(r2_ballpit3[n])
     n+=1
-print(r2p1_li)
+#print(r2p1_li)
 m=0
 while m<5:
     r2p2_li.append(r2_ballpit3[m+5])
     m+=1
-print(r2p2_li)
+#print(r2p2_li)
 o=0
 while o<5:
     r2p3_li.append(r2_ballpit3[o+10])
@@ -332,7 +332,7 @@ while o<5:
 print("revealing frontrow for round 2 ")
 print()
 #front row for p1 for round 2
-print(r2p3_li) 
+#print(r2p3_li) 
 print("front row for",r2p1)
 print(r2p1_li[0])
 print(r2p1_li[1])
@@ -429,7 +429,7 @@ r2_vote.append(p2_vote)
 print("enter total number of votes for",r2p3)
 p3_vote=int(input())
 r2_vote.append(p3_vote)
-print(r2_vote)
+#print(r2_vote)
 r2v=0
 round3_lot=[]
 r2v_max=max(r2_vote)
@@ -443,7 +443,7 @@ print(round2_lot.pop(r2v_ind),"has been eliminated")
 print()
 #print(round2_lot)
 #print("ballpit r2")
-print(r2_ballpit2)
+#print(r2_ballpit2)
 round3_lot=round2_lot
 print(round3_lot[0],"and",round3_lot[1],"will head into the final round")
 print("round 3 ... bin or win")
