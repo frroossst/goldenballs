@@ -41,6 +41,7 @@ while n<4:
     playing_lot.append("KILLER")
     n+=1
 #print(playing_lot)
+###r1p1
 p1_lot=random.sample(playing_lot,4)
 for i in playing_lot:
     if i == p1_lot[0]:
@@ -60,7 +61,7 @@ for i in playing_lot:
         playing_lot.pop(a)
 #print("player 1 lot")
 #print(p1_lot)
-#r1p2
+###r1p2
 p2_lot=random.sample(playing_lot,4)
 for i in playing_lot:
     if i == p2_lot[0]:
@@ -80,7 +81,7 @@ for i in playing_lot:
         playing_lot.pop(a)
 #print("player 2 lot")
 #print(p2_lot)
-#r1p3
+###r1p3
 p3_lot=random.sample(playing_lot,4)
 for i in playing_lot:
     if i == p3_lot[0]:
@@ -100,7 +101,7 @@ for i in playing_lot:
         playing_lot.pop(a)
 #print("player 3 lot")
 #print(p3_lot)
-#r1p4
+###r1p4
 p4_lot=playing_lot
 p4_lot.append("KILLER")
 #print("player 4 lot")
@@ -133,8 +134,8 @@ print("front row for",p4)
 while i<2:
     print(p4_lot[i])
     i+=1
-#time.sleep(45)
-#backrow for p1
+time.sleep(45)
+###backrow for p1
 print()
 print("all players except",p1,"must look away")
 fp1=open(p1,"w")
@@ -144,14 +145,14 @@ fp1.writelines(p1_lotw1)
 fp1.writelines(" | ")
 fp1.writelines(p1_lotw2)
 fp1.close()
-#time.sleep(15)
+time.sleep(15)
 print(p1,"check the file with your name on it to see the backrow")
 p1brow1=input("reveal your first ball : ")
 p1brow2=input("reveal your second ball : ")
 print("revealing backrow for",p1)
 print(p1brow1)
 print(p1brow2)
-#backrow for p2
+###backrow for p2
 print()
 print("all players except",p2,"must look away")
 fp2=open(p2,"w")
@@ -161,14 +162,14 @@ fp2.writelines(p2_lotw1)
 fp2.writelines(" | ")
 fp2.writelines(p2_lotw2)
 fp2.close()
-#time.sleep(15)
+time.sleep(15)
 print(p2,"check the file with your name on it to see the backrow")
 p2brow1=input("reveal your first ball : ")
 p2brow2=input("reveal your second ball : ")
 print("revealing backrow for",p2)
 print(p2brow1)
 print(p2brow2)
-#backrow for p3
+###backrow for p3
 print()
 print("all players except",p3,"must look away")
 fp3=open(p3,"w")
@@ -178,14 +179,14 @@ fp3.writelines(p3_lotw1)
 fp3.writelines(" | ")
 fp3.writelines(p3_lotw2)
 fp3.close()
-#time.sleep(15)
+time.sleep(15)
 print(p3,"check the file with your name on it to see the backrow")
 p3brow1=input("reveal your first ball : ")
 p3brow2=input("reveal your second ball : ")
 print("revealing backrow for",p3)
 print(p3brow1)
 print(p3brow2)
-#backrow for p4
+###backrow for p4
 print()
 print("all players except",p4,"must look away")
 fp4=open(p4,"w")
@@ -195,24 +196,24 @@ fp4.writelines(p4_lotw1)
 fp4.writelines(" | ")
 fp4.writelines(p4_lotw2)
 fp4.close()
-#time.sleep(15)
+time.sleep(15)
 print(p4,"check the file with your name on it to see the backrow")
 p4brow1=input("reveal your first ball : ")
 p4brow2=input("reveal your second ball : ")
 print("revealing backrow for",p4)
 print(p4brow1)
 print(p4brow2)
-#voting and deliiberation round
+###voting and deliiberation round
 print("each player will now have 45 seconds to defend why they should not be voted out")
 print(p1,"has the floor for the next 45 seconds")
-#time.sleep(45)
+time.sleep(45)
 print(p2,"has the floor for the next 45 seconds")
-#time.sleep(45)
+time.sleep(45)
 print(p3,"has the floor for the next 45 seconds")
-#time.sleep(45)
+time.sleep(45)
 print(p4,"has the floor for the next 45 seconds")
-#time.sleep(45)
-#round one voting
+time.sleep(45)
+###round one voting
 print("now the voting round will begin")
 print("enter total number of votes for",p1)
 p1_vote=int(input())
@@ -232,7 +233,7 @@ for i in r1_vote:
     if i == max_votes_r1:
         player_elim=r1_vote.index(i)
         if player_elim == 0:
-            #sql injection
+            ###sql injection
             mycursor.execute("update player_elim set count=count+1 where player='player one'")
             db.commit()
             print(p1,"has been eliminated")
@@ -257,7 +258,7 @@ for i in r1_vote:
             r1_players.pop(3)
             rd+=1
 #print(r1_players)
-#round two begins
+###round two begins
 round2_lot=r1_players
 #print(round2_lot)
 print("round two is beginning")
@@ -331,23 +332,23 @@ while o<5:
     o+=1
 print("revealing frontrow for round 2 ")
 print()
-#front row for p1 for round 2
+###front row for p1 for round 2
 #print(r2p3_li) 
 print("front row for",r2p1)
 print(r2p1_li[0])
 print(r2p1_li[1])
 print()
-#front row for p2 for round 3
+###front row for p2 for round 2
 print("front row for",r2p2)
 print(r2p2_li[0])
 print(r2p2_li[1])
 print()
-#front row for p3 for round 3
+###front row for p3 for round 2
 print("front row for",r2p3)
 print(r2p3_li[0])
 print(r2p3_li[1])
 print()
-#backrow for p1 for round 2 
+###backrow for p1 for round 2 
 print()
 print("all players except",p1,"must look away")
 fp1r2=open(p1,"w")
@@ -368,7 +369,7 @@ print("revealing backrow for",r2p1)
 print(p1brow1)
 print(p1brow2)
 print(p1brow3)
-#backrow for p2 for round 2
+###backrow for p2 for round 2
 print()
 print("all players except",p2,"must look away")
 fp2r2=open(p2,"w")
@@ -389,7 +390,7 @@ print("revealing backrow for",r2p2)
 print(p2brow1)
 print(p2brow2)
 print(p2brow3)
-#backrow for p3 for round 2
+###backrow for p3 for round 2
 print()
 print("all players except",p3,"must look away")
 fp3r2=open(p3,"w")
@@ -410,15 +411,15 @@ print("revealing backrow for",r2p3)
 print(p3brow1)
 print(p3brow2)
 print(p3brow3)
-#voting and deliberation round
+###voting and deliberation round
 print("each player will now have 45 seconds to defend why they should not be voted out")
 print(r2p1,"has the floor for the next 45 seconds")
-#time.sleep(45)
+time.sleep(45)
 print(r2p2,"has the floor for the next 45 seconds")
-#time.sleep(45)
+time.sleep(45)
 print(r2p3,"has the floor for the next 45 seconds")
-#time.sleep(45)
-#voting for round two
+time.sleep(45)
+###voting for round two
 print("now the voting round will begin")
 print("enter total number of votes for",r2p1)
 p1_vote=int(input())
@@ -501,7 +502,7 @@ for i in prize_pool:
     else:
         prize_pot+=i
 print("prize pool : ",prize_pot)
-#split or steal
+###split or steal
 r3p1=round3_lot[0]
 r3p2=round3_lot[1]
 print("each player will no vote split or steal")
@@ -509,7 +510,7 @@ print("if both people split the prize pool is divided into half")
 print("if both people steal none of them get the prize pool")
 print("if one of you split and the other steal the latter gets the entire prize pool")
 print("you now have 60 seconds to deliberate with each other")
-#time.sleep(60)
+time.sleep(60)
 print("enter 1 to steal and 0 to split")
 print("now",r3p1,"will vote")
 v1=int(input("please enter your vote : "))
