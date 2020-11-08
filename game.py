@@ -134,7 +134,6 @@ print("front row for",p4)
 while i<2:
     print(p4_lot[i])
     i+=1
-time.sleep(45)
 ###backrow for p1
 print()
 print("all players except",p1,"must look away")
