@@ -504,7 +504,7 @@ print("prize pool : ",prize_pot)
 ###split or steal
 r3p1=round3_lot[0]
 r3p2=round3_lot[1]
-print("each player will no vote split or steal")
+print("each player will now vote split or steal")
 print("if both people split the prize pool is divided into half")
 print("if both people steal none of them get the prize pool")
 print("if one of you split and the other steal the latter gets the entire prize pool")
